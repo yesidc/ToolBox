@@ -1,6 +1,7 @@
 {% load bootstrap5 %}
 {% load static %}
 {% load crispy_forms_tags %}
+{% load matomo_tags %}
 
 <!doctype html>
 <html lang="en">
@@ -28,6 +29,7 @@
 
 </head>
 {#rgba(209,242,249,0.4)#}
+{% tracking_code %}
 <body style="background-color: rgba(209,242,249,0.4); display: flex;flex-direction: column;min-height: 100vh;margin: 0">
 
 
