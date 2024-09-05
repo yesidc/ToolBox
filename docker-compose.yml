@@ -18,4 +18,6 @@ services:
       /bin/sh -c "
       python3 manage.py makemigrations &&
       python3 manage.py migrate &&
+      python3 manage.py read_data --save_category &&
+      python3 manage.py read_data --save_idea &&
       python3 manage.py runserver 0.0.0.0:8000"
